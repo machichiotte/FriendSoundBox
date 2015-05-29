@@ -22,10 +22,18 @@ public class MainActivityFragment extends Fragment {
 
 
         ImageButton one = (ImageButton)rootView.findViewById(R.id.button_soundbox_A);
+        ImageButton two = (ImageButton)rootView.findViewById(R.id.button_soundbox_B);
+        ImageButton three = (ImageButton)rootView.findViewById(R.id.button_soundbox_C);
 
         final MediaPlayer mp = MediaPlayer.create(getActivity(), R.raw.sonar);
-one.setImageResource(R.drawable.benj);
+        one.setImageResource(R.drawable.benj);
+        two.setImageResource(R.drawable.saucisse);
+        three.setImageResource(R.drawable.maru);
+
         one.setBackgroundColor(Color.TRANSPARENT);
+        two.setBackgroundColor(Color.TRANSPARENT);
+        three.setBackgroundColor(Color.TRANSPARENT);
+
         one.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
